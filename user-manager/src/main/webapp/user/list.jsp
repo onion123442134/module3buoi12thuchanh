@@ -19,9 +19,11 @@
         <input type="hidden" name="action" value="sort">
         <button type="submit">Sắp xếp theo tên</button>
     </form>
-    <h2>
-        <a href="/users?action=create">Add New User</a>
-    </h2>
+
+    <form action="/users?action=create" method="get" style="margin-top:15px;">
+        <input type="hidden" name="action" value="create">
+        <button type="submit">Add New User</button>
+    </form>
     <table border="1" cellpadding="5">
         <caption><h2>List of Users</h2></caption>
         <tr>
